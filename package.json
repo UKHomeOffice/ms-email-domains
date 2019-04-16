@@ -1,0 +1,18 @@
+{
+  "name": "ms-organisations",
+  "version": "1.0.0",
+  "description": "Exports a list of email-domains that are recognised for the modern-slavery service",
+  "main": "index.js",
+  "keywords": [
+    "hof",
+    "modern-slavery",
+    "organisations"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UKHomeOffice/ms-email-domains.git"
+  },
+  "homepage": "https://github.com/UKHomeOffice/ms-email-domains#readme"
+}
