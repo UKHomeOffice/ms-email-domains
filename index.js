@@ -10,7 +10,6 @@ module.exports =
 'nccgroup.com',
 'hscni.net',
 'migranthelpuk.org',
-'migranthelpuk.org',
 'medailletrust.org.uk',
 'salvationarmy.org.uk',
 'barnardos.org.uk',
