@@ -8,6 +8,7 @@ module.exports =
 'homeoffice.gov.uk',
 'homeoffice.gsi.gov.uk',
 'gov.uk',
+'kalayaan.org.uk',
 'nccgroup.com',
 'hscni.net',
 'migranthelpuk.org',
