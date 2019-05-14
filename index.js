@@ -21,4 +21,10 @@ module.exports =
 'bawso.org.uk',
 'refugeecouncil.org.uk',
 'derrystrabane.com',
+'salvationarmy.org.uk.cjsm.net',
+'met.police.uk',
+'met.pnn.police.uk',
+'rbkc.gov.uk',
+'westminster.gov.uk',
+'lbhf.gov.uk',
 ];
