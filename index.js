@@ -32,5 +32,5 @@ module.exports =
 'psni.pnn.police.uk',
 'psni.police.uk',
 'devonandcornwall.pnn.police.uk',
-'devonandcornwall.police.uk',
+'devonandcornwall.police.uk'
 ];
