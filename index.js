@@ -45,5 +45,7 @@ module.exports =
 'nmandd.org',
 'fermanaghomagh.com',
 'derrystrabane.com',
-'midulstercouncil.org'
+'midulstercouncil.org',
+'belfast-harbour.co.uk',
+'bfs.aero'
 ];
