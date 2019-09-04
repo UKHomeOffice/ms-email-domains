@@ -15,7 +15,7 @@ module.exports =
 'medailletrust.org.uk',
 'salvationarmy.org.uk',
 'barnardos.org.uk',
-'nspcc.org',
+'nspcc.org.uk',
 'unseenuk.org',
 'newpathways.org.uk',
 'bawso.org.uk',
