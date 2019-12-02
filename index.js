@@ -27,6 +27,7 @@ module.exports =
 'rbkc.gov.uk',
 'westminster.gov.uk',
 'lbhf.gov.uk',
+'sw.glasgow.gov.uk',
 'scotland.pnn.police.uk',
 'scotland.police.uk',
 'psni.pnn.police.uk',
