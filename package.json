@@ -3,6 +3,9 @@
   "version": "1.1.10",
   "description": "Exports a list of email-domains that are recognised for the modern-slavery service",
   "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha"
+  },
   "keywords": [
     "hof",
     "modern-slavery",
@@ -14,5 +17,9 @@
     "type": "git",
     "url": "git+https://github.com/UKHomeOffice/ms-email-domains.git"
   },
-  "homepage": "https://github.com/UKHomeOffice/ms-email-domains#readme"
+  "homepage": "https://github.com/UKHomeOffice/ms-email-domains#readme",
+  "devDependencies": {
+    "is-valid-domain": "0.0.11",
+    "mocha": "^6.2.2"
+  }
 }
