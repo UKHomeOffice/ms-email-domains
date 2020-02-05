@@ -1,51 +1,10 @@
-'use strict'
+const emailDomainList = require('./email-domain-list.json')
+const emailExtensions = require('./email-extensions.json')
 
-// Adding 'nccgroup.com' for ITHC. Remove after approval
+module.exports = emailDomainList
 
-module.exports =
-[
-  'digital.homeoffice.gov.uk',
-  'homeoffice.gov.uk',
-  'homeoffice.gsi.gov.uk',
-  'kalayaan.org.uk',
-  'nccgroup.com',
-  'hscni.net',
-  'migranthelpuk.org',
-  'medaille-trust.org.uk',
-  'salvationarmy.org.uk',
-  'barnardos.org.uk',
-  'nspcc.org.uk',
-  'unseenuk.org',
-  'newpathways.org.uk',
-  'bawso.org.uk',
-  'refugeecouncil.org.uk',
-  'derrystrabane.com',
-  'salvationarmy.org.uk.cjsm.net',
-  'met.police.uk',
-  'met.pnn.police.uk',
-  'rbkc.gov.uk',
-  'westminster.gov.uk',
-  'lbhf.gov.uk',
-  'sw.glasgow.gov.uk',
-  'scotland.pnn.police.uk',
-  'scotland.police.uk',
-  'psni.pnn.police.uk',
-  'psni.police.uk',
-  'devonandcornwall.pnn.police.uk',
-  'devonandcornwall.police.uk',
-  'birminghamchildrenstrust.co.uk',
-  'dcstrust.co.uk',
-  'eastriding.gcsx.gov.uk',
-  'brighterfuturesforchildren.org',
-  'sandwellchildrenstrust.org',
-  'scstrust.co.uk',
-  'togetherforchildren.org.uk',
-  'achievingforchildren.org.uk',
-  'childrenfirstnorthamptonshire.co.uk',
-  'nmandd.org',
-  'fermanaghomagh.com',
-  'derrystrabane.com',
-  'midulstercouncil.org',
-  'belfast-harbour.co.uk',
-  'bfs.aero'
-]
+module.exports.isValidDomain = (domain) => (this.isOnDomainList(domain) || this.isOnExtensionsList(domain))
+
+module.exports.isOnDomainList = (userEmailDomain) => (emailDomainList.includes(userEmailDomain))
+
+module.exports.isOnExtensionsList = (userExtension) => emailExtensions.some((ext) => userExtension.endsWith(ext))
