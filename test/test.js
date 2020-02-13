@@ -3,13 +3,14 @@ const extensions = require('../email-extensions.json')
 const assert = require('assert') // core
 const isValidDomain = require('is-valid-domain')
 const checkDomain = require('..')
+const domainFunctions = require('../domain-functions.js')
 
 describe('module exports', function () {
   it('should export an array', function () {
     assert.ok(Array.isArray(checkDomain))
   })
   it('should export some functions too', function () {
-    assert.ok(typeof checkDomain.isOnDomainList === 'function')
+    assert.ok(typeof domainFunctions.isOnDomainList === 'function')
   })
 })
 describe('importing JSON data files', function () {
@@ -24,7 +25,7 @@ describe('importing JSON data files', function () {
 describe('check domain', function () {
   for (const domain of checkDomain) {
     it(`${domain} is a valid domain in the email domain list`, function () {
-      assert.ok(checkDomain.isOnDomainList(domain), domain)
+      assert.ok(domainFunctions.isOnDomainList(domain), domain)
     })
   }
 })
@@ -33,7 +34,7 @@ describe('check wrong domain', function () {
   const wrongDomains = ['.com', '.org.uk', '.co.uk']
   for (const domain of wrongDomains) {
     it(`${domain} is not a valid domain in the email domain list`, function () {
-      assert.ok(checkDomain.isOnDomainList(domain) === false)
+      assert.ok(domainFunctions.isOnDomainList(domain) === false)
     })
   }
 })
@@ -42,7 +43,7 @@ describe('check extensions', function () {
   for (const i in extensions) {
     const ext = extensions[i]
     it(`${ext} is a valid extension from the extension list`, function () {
-      assert.ok(checkDomain.isOnExtensionsList(ext))
+      assert.ok(domainFunctions.isOnExtensionsList(ext))
     })
   }
 })
@@ -52,7 +53,7 @@ describe('check valid extensions', function () {
   for (const i in validExt) {
     const ext = validExt[i]
     it(`${ext} is a valid extension`, function () {
-      assert.ok(checkDomain.isOnExtensionsList(ext))
+      assert.ok(domainFunctions.isOnExtensionsList(ext))
     })
   }
 })
@@ -62,7 +63,7 @@ describe('check wrong extensions', function () {
   for (const i in wrongExt) {
     const ext = wrongExt[i]
     it(`${ext} is not a valid extension in the extension list`, function () {
-      assert.ok(checkDomain.isOnExtensionsList(ext) === false)
+      assert.ok(domainFunctions.isOnExtensionsList(ext) === false)
     })
   }
 })
