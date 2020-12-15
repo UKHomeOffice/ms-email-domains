@@ -1,6 +1,6 @@
 {
   "name": "ms-email-domains",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "Exports a list of email-domains that are recognised for the modern-slavery service",
   "main": "index.js",
   "scripts": {
