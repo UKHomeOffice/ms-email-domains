@@ -3,4 +3,4 @@ const domainFunctions = require('./domain-functions.js')
 
 module.exports = emailDomainList
 
-module.exports.isValidDomain = (domain) => (domainFunctions.isOnDomainList(domain) || domainFunctions.isOnExtensionsList(domain))
+module.exports.isValidDomain = (domain) => (domainFunctions.isOnDomainList(domain.toLowerCase()) || domainFunctions.isOnExtensionsList(domain.toLowerCase()))
